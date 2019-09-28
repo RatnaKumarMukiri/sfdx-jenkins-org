@@ -2,11 +2,10 @@
 
 node {
 
-    def SF_CONSUMER_KEY=env.SF_CONSUMER_KEY
-    def SF_USERNAME=env.SF_USERNAME
-    def SERVER_KEY_CREDENTIALS_ID=env.SERVER_KEY_CREDENTIALS_ID
-    def DEPLOYDIR='src'
-    def TEST_LEVEL='RunLocalTests'
+def HUB_ORG=env.HUB_ORG_DH
+def SFDC_HOST = env.SFDC_HOST_DH
+def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
+def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
 
 
     def toolbelt = tool 'toolbelt'
